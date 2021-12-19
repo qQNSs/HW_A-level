@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.cards-tr {
+  width: 600px;
+  height: 400px;
+  background: #0d5825;
+  font-size: 25px;
+  color: white;
+}
+.quote {
+  text-align: center;
+}
+.author {
+  text-align: center;
+  font-style: italic;
+}
+.card {
+  width: 150px;
+}
+.card:hover {
+  bottom: 0;
+  transition: 0.2s ease-in;
+}
+.card1 {
+  position: relative;
+  left: calc(10% + 110px);
+  bottom: -30px;
+  transform: rotate(-20deg);
+}
+
+.card2 {
+  position: relative;
+  left: 10%;
+  bottom: -35px;
+  transform: rotate(-10deg);
+}
+.card3 {
+  position: relative;
+  left: calc(10% - 102px);
+  transform: rotate(8deg);
+  bottom: -54px;
+}
+.blocks {
+  width: 600px;
+}
+.block1 {
+  width: 100px;
+  height: 100px;
+  background: rgb(255, 114, 114);
+  position: relative;
+  top: 40px;
+  left: 100px;
+}
+.block2 {
+  width: 100px;
+  height: 100px;
+  background: rgb(82, 82, 224);
+  position: relative;
+  left: 160px;
+  z-index: 2;
+}
+.block3 {
+  width: 100px;
+  height: 100px;
+  background: rgb(110, 228, 110);
+  position: relative;
+  top: -40px;
+  left: 220px;
+}
+.menu {
+  width: 300px;
+  height: 500px;
+  background: grey;
+  position: relative;
+  left: -250px;
+  color: white;
+  font-size: 25px;
+  transition: 0.3s ease-in;
+}
+.items {
+  list-style-type: "🔸";
+  position: relative;
+  top: 10%;
+}
+.items li:hover {
+  color: rgb(196, 196, 0);
+}
+.menuhere {
+  transform: rotate(90deg);
+  position: relative;
+  top: 120px;
+  right: -120px;
+  transition: 0.3s ease-in;
+}
+.menu:hover .menuhere {
+  opacity: 0;
+  transition: 0.3s ease-in;
+}
+.menu:hover {
+  left: 0;
+  transition: 0.3s ease-in;
+}
+@keyframes slidebox{
+        0%{
+            top: 0;
+            left: 0;
+            background: red;
+        }
+        25%{
+            top: calc(100% - 100px);
+            left: 0;
+            background: blue;
+        }
+        50%{
+            top: calc(100% - 100px);
+            left: calc(100% - 100px);
+            background: green;
+        }
+        75%{
+            top: 0;
+            left: calc(100% - 100px);
+            background: yellow;
+        }
+        100%{
+            top: 0;
+            left: 0;
+            background: red;
+        }
+    
+    }
+    .box-wrap{
+        width: 300px;
+        height: 300px;
+        position: relative;
+    }
+    .holder{
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: absolute;
+        animation: slidebox 1.0s infinite;
+    }
